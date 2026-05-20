@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0d0d0d">
+  <title>Essays</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" role="banner">
+    <button class="hamburger" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menuOverlay">
+      <span></span><span></span><span></span>
+    </button>
+    <a class="nav-title" id="navHome" href="#">Essays</a>
+  </header>
+
+  <!-- MENU OVERLAY -->
+  <div class="menu-overlay" id="menuOverlay" role="dialog" aria-label="Essay menu" aria-hidden="true">
+    <nav class="menu-panel" id="menuPanel">
+      <button class="menu-close" id="menuClose" aria-label="Close menu">&#215;</button>
+      <div class="essay-tiles" id="essayTiles" role="list">
+        <p class="tiles-loading" id="tilesStatus">Loading&hellip;</p>
+      </div>
+    </nav>
+    <div class="menu-backdrop" id="menuBackdrop" aria-hidden="true"></div>
+  </div>
+
+  <!-- APP -->
+  <main id="app">
+
+    <!-- LANDING VIEW -->
+    <section class="view" id="viewLanding" aria-label="Landing page">
+      <div class="hero">
+        <h1 class="site-title">Essays</h1>
+        <p class="site-tagline">Selected writings</p>
+      </div>
+      <div class="latest-essay" id="latestEssay" aria-label="Latest essay" hidden></div>
+    </section>
+
+    <!-- ESSAY VIEW -->
+    <section class="view" id="viewEssay" aria-label="Essay" hidden>
+      <div class="essay-header">
+        <p class="essay-meta" id="essayMeta"></p>
+        <h1 class="essay-title" id="essayTitle"></h1>
+        <p class="section-label" id="sectionLabel"></p>
+      </div>
+      <article class="essay-body" id="essayBody" role="main"></article>
+      <nav class="pagination" id="pagination" aria-label="Page navigation" hidden>
+        <button class="page-btn" id="prevBtn" aria-label="Previous section">&#8592;</button>
+        <span class="page-indicator" id="pageIndicator" aria-live="polite"></span>
+        <button class="page-btn" id="nextBtn" aria-label="Next section">&#8594;</button>
+      </nav>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
