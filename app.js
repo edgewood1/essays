@@ -19,6 +19,13 @@ marked.use({
   breaks: false,
   mangle: false,
   headerIds: false,
+  renderer: {
+    // Attach data-caption so the placeholder handler can label broken images
+    image(href, title, text) {
+      const cap = title || text || '';
+      return `<img src="${href}" alt="${text || ''}" data-caption="${cap}">`;
+    },
+  },
 });
 
 /* ═══════════════════════════════════════════════════════════════════════════════
@@ -96,49 +103,81 @@ const API = (() => {
 ═══════════════════════════════════════════════════════════════════════════════ */
 const Parser = (() => {
 
+  // Matches a lone markdown image on its own line (with optional whitespace)
+  const LONE_IMAGE_RE = /^\s*!\[([^\]]*)\]\(([^)]+)\)\s*$/;
+
   /**
    * Split raw markdown into sections on ## headings.
-   * Returns Array<{ title: string, content: string }>
+   * Returns Array<Section>
+   *
+   * Section shape:
+   *   { title: string, content: string, imageOnly: bool, imageSrc: string, imageAlt: string }
+   *
+   * imageOnly sections contain a single image and are rendered full-bleed.
    *
    * Convention:
-   *   # Essay Title        ← H1, essay title
-   *   intro paragraphs     ← becomes section with no title (shown blank in label)
-   *   ## Section Name      ← becomes a titled section/page
-   *   body...
+   *   # Essay Title          ← H1, essay title
+   *   intro paragraphs       ← becomes section with no title
+   *   ## Section Name        ← titled section/page
+   *   body text...
+   *   ## Photo Caption       ← section containing only ![...](images/x.jpg) → full-page image
    */
   function splitSections(raw) {
-    // Split on lines that start with exactly "## "
     const chunks = raw.split(/^(?=##\s)/m);
     const sections = [];
 
     chunks.forEach(chunk => {
       const h2 = chunk.match(/^##\s+(.+?)(?:\r?\n|$)/);
       if (h2) {
-        const title = h2[1].trim();
+        const title   = h2[1].trim();
         const content = chunk.slice(h2[0].length).trim();
-        if (content) sections.push({ title, content });
-        else sections.push({ title, content: '' });
+        sections.push(makeSection(title, content));
       } else {
-        // Intro chunk — strip H1 line if present
+        // Intro chunk — strip H1 line
         const content = chunk.replace(/^#\s+.+?(?:\r?\n|$)/, '').trim();
-        if (content) sections.push({ title: '', content });
+        if (content) sections.push(makeSection('', content));
       }
     });
 
-    // Fallback: treat whole body as one section
     if (sections.length === 0) {
       const content = raw.replace(/^#\s+.+?(?:\r?\n|$)/, '').trim();
-      sections.push({ title: '', content });
+      sections.push(makeSection('', content));
     }
 
     return sections;
+  }
+
+  /**
+   * Build a section object. Detects image-only sections automatically.
+   * A section is image-only when its entire content is a single image tag.
+   */
+  function makeSection(title, content) {
+    const imgMatch = content.match(LONE_IMAGE_RE);
+    if (imgMatch) {
+      return {
+        title,
+        content,
+        imageOnly: true,
+        imageAlt: imgMatch[1],
+        imageSrc: imgMatch[2],
+      };
+    }
+    return { title, content, imageOnly: false, imageAlt: '', imageSrc: '' };
   }
 
   function renderSection(content) {
     return marked.parse(content);
   }
 
-  return { splitSections, renderSection };
+  /**
+   * Render an image-only section as a single <img> (or placeholder if missing).
+   * The caller is responsible for attaching the onerror placeholder handler.
+   */
+  function renderImageSection(section) {
+    return `<img src="${esc(section.imageSrc)}" alt="${esc(section.imageAlt)}" data-caption="${esc(section.imageAlt)}">`;
+  }
+
+  return { splitSections, makeSection, renderSection, renderImageSection };
 })();
 
 /* ═══════════════════════════════════════════════════════════════════════════════
@@ -266,24 +305,52 @@ const UI = (() => {
     const total    = sections.length;
 
     // Header
-    dom.essayMeta.textContent    = `${total > 1 ? total + ' sections' : ''}`;
+    dom.essayMeta.textContent    = total > 1 ? `${total} sections` : '';
     dom.essayTitle.textContent   = current.title;
     dom.sectionLabel.textContent = section.title || '';
 
-    // Body
-    dom.essayBody.innerHTML = Parser.renderSection(section.content);
+    // Full-page image vs prose
+    if (section.imageOnly) {
+      dom.viewEssay.classList.add('image-page');
+      dom.essayBody.innerHTML = Parser.renderImageSection(section);
+      // Wire placeholder for missing/pending images
+      const img = dom.essayBody.querySelector('img');
+      if (img) img.addEventListener('error', () => showImgPlaceholder(img), { once: true });
+    } else {
+      dom.viewEssay.classList.remove('image-page');
+      dom.essayBody.innerHTML = Parser.renderSection(section.content);
+      // Inline images: placeholder on error
+      dom.essayBody.querySelectorAll('img').forEach(img => {
+        img.addEventListener('error', () => showImgPlaceholder(img), { once: true });
+      });
+    }
 
     // Pagination
     if (total > 1) {
-      dom.pagination.hidden        = false;
+      dom.pagination.hidden         = false;
       dom.pageIndicator.textContent = `${page + 1} / ${total}`;
-      dom.prevBtn.disabled         = page === 0;
-      dom.nextBtn.disabled         = page === total - 1;
+      dom.prevBtn.disabled          = page === 0;
+      dom.nextBtn.disabled          = page === total - 1;
     } else {
       dom.pagination.hidden = true;
     }
 
     window.scrollTo({ top: 0, behavior: 'instant' });
+  }
+
+  /**
+   * Replace a broken <img> with a styled placeholder box.
+   * Preserves the alt text as the label so the author can see what goes there.
+   */
+  function showImgPlaceholder(img) {
+    const caption = img.dataset.caption || img.alt || 'Image pending';
+    const ph = document.createElement('div');
+    ph.className = 'img-placeholder';
+    ph.innerHTML = `
+      <span class="img-placeholder-icon">&#9634;</span>
+      <span class="img-placeholder-label">${esc(caption)}</span>
+    `;
+    img.replaceWith(ph);
   }
 
   /* ── Menu ── */

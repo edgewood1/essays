@@ -310,6 +310,114 @@ main {
   color: var(--text);
 }
 
+/* ─── Inline images ──────────────────────────────────────────────────────────── */
+.essay-body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2em auto;
+  /* subtle border to frame dark-bg images */
+  outline: 1px solid var(--border);
+}
+
+.essay-body figure {
+  margin: 2em 0;
+  text-align: center;
+}
+
+.essay-body figcaption {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  margin-top: 0.6em;
+  text-align: center;
+}
+
+/* Image placeholder shown when src is missing or pending */
+.img-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: var(--surface-2);
+  border: 1px dashed var(--border);
+  margin: 2em 0;
+  color: var(--text-muted);
+}
+
+.img-placeholder-icon {
+  font-size: 1.5rem;
+  opacity: 0.4;
+}
+
+.img-placeholder-label {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* ─── Full-page image section ────────────────────────────────────────────────── */
+#viewEssay.image-page {
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+#viewEssay.image-page .essay-header {
+  padding: 1.5rem var(--pad-x) 1rem;
+  margin-bottom: 0;
+  border-bottom: none;
+  max-width: none;
+}
+
+#viewEssay.image-page .essay-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+  background: #000;
+}
+
+#viewEssay.image-page .essay-body img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0;
+  outline: none;
+}
+
+#viewEssay.image-page .essay-body .img-placeholder {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  aspect-ratio: unset;
+  background: var(--bg);
+}
+
+#viewEssay.image-page .essay-body figcaption,
+#viewEssay.image-page .essay-body .img-placeholder-label {
+  /* caption shown in section-label instead */
+  display: none;
+}
+
+#viewEssay.image-page .pagination {
+  max-width: none;
+  margin: 0;
+  padding: 1rem var(--pad-x);
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+}
+
 .essay-body p { margin-bottom: 1.35em; }
 .essay-body p:last-child { margin-bottom: 0; }
 
