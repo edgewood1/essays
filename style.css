@@ -191,12 +191,14 @@ body {
 }
 
 /* ─── Views ──────────────────────────────────────────────────────────────────── */
+
+/* Ensure CSS display rules never override the hidden attribute */
+[hidden] { display: none !important; }
+
 main {
   padding-top: var(--nav-h);
   min-height: 100dvh;
 }
-
-.view { min-height: calc(100dvh - var(--nav-h)); }
 
 /* ─── Landing ────────────────────────────────────────────────────────────────── */
 .hero {
