@@ -334,8 +334,13 @@ main {
   max-width: 100%;
   height: auto;
   margin: 2em auto;
-  /* subtle border to frame dark-bg images */
   outline: 1px solid var(--border);
+  filter: invert(1) grayscale(1) brightness(0.85) sepia(0.25);
+}
+
+/* Same treatment for full-page image sections */
+#viewEssay.image-page .essay-body img {
+  filter: invert(1) grayscale(1) brightness(0.85) sepia(0.25);
 }
 
 .essay-body figure {
