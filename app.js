@@ -254,6 +254,7 @@ const UI = (() => {
     essayMeta:     document.getElementById('essayMeta'),
     essayTitle:    document.getElementById('essayTitle'),
     sectionLabel:  document.getElementById('sectionLabel'),
+    essayHeader:   document.getElementById('essayView').querySelector('.essay-header'),
     essayBody:     document.getElementById('essayBody'),
     pagination:    document.getElementById('pagination'),
     scrollProgress: document.getElementById('scrollProgress'),
@@ -306,9 +307,9 @@ const UI = (() => {
     const total    = sections.length;
 
     // Header
-    dom.essayMeta.textContent    = total > 1 ? `${total} sections` : '';
     dom.essayTitle.textContent   = current.title;
     dom.sectionLabel.textContent = section.title || '';
+    dom.essayHeader.classList.toggle('intro', !section.title);
 
     // Full-page image vs prose
     if (section.imageOnly) {

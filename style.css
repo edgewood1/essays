@@ -271,40 +271,53 @@ main {
 }
 
 .essay-header {
-  margin-bottom: 2.25rem;
-  padding-bottom: 1.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
   border-bottom: 1px solid var(--border);
 }
 
-.essay-meta {
+/* essay-meta hidden — title carries that context now */
+.essay-meta { display: none; }
+
+/* Running header — always small and dim */
+.essay-title {
   font-family: var(--font-ui);
   font-size: 0.65rem;
   font-weight: 300;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 0.75rem;
+  color: var(--text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.essay-title {
+/* Intro page (no section label) — title steps up as the main heading */
+.essay-header.intro .essay-title {
   font-family: var(--font-serif);
-  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  font-size: clamp(1.2rem, 4vw, 1.6rem);
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--text);
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+/* Section label — main heading on all non-intro pages */
+.section-label {
+  font-family: var(--font-serif);
+  font-size: clamp(1.05rem, 3.5vw, 1.35rem);
+  font-weight: 400;
+  line-height: 1.2;
   letter-spacing: -0.01em;
   color: var(--text);
+  margin-top: 0.5rem;
 }
 
-.section-label {
-  font-family: var(--font-ui);
-  font-size: 0.65rem;
-  font-weight: 300;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-top: 0.9rem;
-  min-height: 1em; /* prevent layout shift when empty */
-}
+.section-label:empty { display: none; }
 
 /* ─── Essay body (prose) ─────────────────────────────────────────────────────── */
 .essay-body {
