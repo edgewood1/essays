@@ -134,6 +134,8 @@ During the week, she almost certainly lived in a small outbuilding at the rear o
 
 On Sundays, when convention gave her the time as her own, she could walk back to whichever community was hers — a walk that meant navigating the long way around, past the dead ends and the industrial margins that separated Markham from its neighbors, before arriving somewhere her people knew her by name rather than by occupation, where she could simply be herself.
 
+## What Remains
+
 Markham and the Strayhorn community were within earshot of each other, yet getting from one to the other meant a long detour — or a trail forged through woods thick with undergrowth.
 
 The Belt Line railroad, the dead-end streets, the creeks pressed into concrete culverts first to connect Markham's two halves and only decades later to reach Washington Street — all of these were decisions made by specific people at specific moments, determining how communities would be connected and how they would be routed around each other. Those decisions can still be read in the landscape: in the gravel remnant at Macon Street, in the old railroad embankment, in the water still moving beneath the foundation at 416.
