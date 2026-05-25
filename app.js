@@ -315,15 +315,18 @@ const UI = (() => {
     if (section.imageOnly) {
       dom.viewEssay.classList.add('image-page');
       dom.essayBody.innerHTML = Parser.renderImageSection(section);
-      // Wire placeholder for missing/pending images
       const img = dom.essayBody.querySelector('img');
-      if (img) img.addEventListener('error', () => showImgPlaceholder(img), { once: true });
+      if (img) {
+        img.addEventListener('error', () => showImgPlaceholder(img), { once: true });
+        img.addEventListener('click', () => openLightbox(img.src, img.alt));
+      }
     } else {
       dom.viewEssay.classList.remove('image-page');
       dom.essayBody.innerHTML = Parser.renderSection(section.content);
-      // Inline images: placeholder on error
       dom.essayBody.querySelectorAll('img').forEach(img => {
         img.addEventListener('error', () => showImgPlaceholder(img), { once: true });
+        img.addEventListener('click', () => openLightbox(img.src, img.alt));
+        img.style.cursor = 'zoom-in';
       });
     }
 
@@ -544,6 +547,31 @@ window.addEventListener('popstate', () => Router.dispatch());
   await ensureEssaysLoaded();
   Router.dispatch();
 })();
+
+/* ═══════════════════════════════════════════════════════════════════════════════
+   LIGHTBOX
+   ─── Full-screen image overlay. Native pinch-zoom works freely inside it.
+       Header and footer are covered by the overlay, unaffected by any zoom.
+═══════════════════════════════════════════════════════════════════════════════ */
+
+function openLightbox(src, alt) {
+  const box = document.createElement('div');
+  box.className = 'img-lightbox';
+  box.innerHTML = `
+    <button class="img-lightbox-close" aria-label="Close">close</button>
+    <img src="${esc(src)}" alt="${esc(alt || '')}">
+  `;
+
+  const close = () => box.remove();
+  box.addEventListener('click', e => { if (e.target === box) close(); });
+  box.querySelector('.img-lightbox-close').addEventListener('click', close);
+
+  // Keyboard close
+  const onKey = e => { if (e.key === 'Escape') { close(); document.removeEventListener('keydown', onKey); } };
+  document.addEventListener('keydown', onKey);
+
+  document.body.appendChild(box);
+}
 
 /* ═══════════════════════════════════════════════════════════════════════════════
    UTILITIES
