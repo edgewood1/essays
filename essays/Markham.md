@@ -112,9 +112,7 @@ Next door, 414 West Markham was completed in 1936 — a modest cottage built on 
 
 Both houses share a basement problem. Records for 416 show persistent water intrusion that no repair has fully solved — which makes a certain geographic sense. The Ellerbe slope begins just yards away, and the ground beneath these blocks has been draining toward that ravine for a long time.
 
-## Chapter Two: Fannie Garland on the Lot
-
-### The Fifth Resident
+## The Fifth Resident
 
 The property record for 416 West Markham Avenue tracks the other facts carefully — construction dates, ownership transfers, electrical connections, and the persistent problem with basement water intrusion.
 
