@@ -256,6 +256,7 @@ const UI = (() => {
     sectionLabel:  document.getElementById('sectionLabel'),
     essayBody:     document.getElementById('essayBody'),
     pagination:    document.getElementById('pagination'),
+    scrollProgress: document.getElementById('scrollProgress'),
     prevBtn:       document.getElementById('prevBtn'),
     nextBtn:       document.getElementById('nextBtn'),
     pageIndicator: document.getElementById('pageIndicator'),
@@ -336,6 +337,11 @@ const UI = (() => {
     }
 
     window.scrollTo({ top: 0, behavior: 'instant' });
+    updateScrollProgress(0); // reset on page turn
+  }
+
+  function updateScrollProgress(pct) {
+    dom.scrollProgress.style.width = `${pct}%`;
   }
 
   /**
@@ -401,6 +407,7 @@ const UI = (() => {
 
   /* ── Expose DOM for event wiring ── */
   return {
+    updateScrollProgress,
     dom,
     showLanding,
     showEssay,
@@ -513,6 +520,16 @@ dom.viewEssay.addEventListener('touchend', (e) => {
   if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) {
     changePage(dx < 0 ? 1 : -1);
   }
+}, { passive: true });
+
+/* ── Scroll progress ── */
+
+window.addEventListener('scroll', () => {
+  if (!Store.get().current) return;
+  const scrolled = window.scrollY;
+  const total    = document.documentElement.scrollHeight - window.innerHeight;
+  const pct      = total > 0 ? Math.min((scrolled / total) * 100, 100) : 100;
+  UI.updateScrollProgress(pct);
 }, { passive: true });
 
 /* ── Browser back/forward ── */

@@ -18,6 +18,7 @@
   --font-ui:    'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
   --nav-h:     56px;
+  --pag-h:     60px;
   --max-prose: 660px;
   --pad-x:     1.5rem;
 
@@ -197,6 +198,7 @@ body {
 
 main {
   padding-top: var(--nav-h);
+  padding-bottom: var(--pag-h);
   min-height: 100dvh;
 }
 
@@ -412,13 +414,7 @@ main {
   display: none;
 }
 
-#viewEssay.image-page .pagination {
-  max-width: none;
-  margin: 0;
-  padding: 1rem var(--pad-x);
-  border-top: 1px solid var(--border);
-  background: var(--bg);
-}
+/* image-page: pagination is already fixed, nothing extra needed */
 
 .essay-body p { margin-bottom: 1.35em; }
 .essay-body p:last-child { margin-bottom: 0; }
@@ -503,14 +499,33 @@ main {
   font-size: 0.85rem;
 }
 
-/* ─── Pagination ─────────────────────────────────────────────────────────────── */
+/* ─── Pagination (sticky footer) ────────────────────────────────────────────── */
 .pagination {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--pag-h);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 3rem;
-  padding-top: 1.5rem;
+  padding: 0 var(--pad-x);
+  padding-bottom: env(safe-area-inset-bottom);
+  background: var(--bg);
   border-top: 1px solid var(--border);
+  z-index: 90;
+}
+
+/* ─── Scroll progress bar ────────────────────────────────────────────────────── */
+.scroll-progress {
+  position: absolute;
+  top: -1px; /* sits on top of the border */
+  left: 0;
+  height: 1px;
+  width: 0%;
+  background: var(--accent);
+  transition: width 0.08s linear;
+  pointer-events: none;
 }
 
 .page-btn {
@@ -518,7 +533,7 @@ main {
   border: 1px solid var(--border);
   color: var(--text);
   cursor: pointer;
-  padding: 0.6rem 1.4rem;
+  padding: 0.5rem 1.25rem;
   font-family: var(--font-ui);
   font-size: 0.85rem;
   letter-spacing: 0.05em;
