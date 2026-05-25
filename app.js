@@ -254,7 +254,7 @@ const UI = (() => {
     essayMeta:     document.getElementById('essayMeta'),
     essayTitle:    document.getElementById('essayTitle'),
     sectionLabel:  document.getElementById('sectionLabel'),
-    essayHeader:   document.getElementById('essayView').querySelector('.essay-header'),
+    essayHeader:   document.getElementById('viewEssay').querySelector('.essay-header'),
     essayBody:     document.getElementById('essayBody'),
     pagination:    document.getElementById('pagination'),
     scrollProgress: document.getElementById('scrollProgress'),
