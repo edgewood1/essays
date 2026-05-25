@@ -30,6 +30,10 @@ Around this time, the Dukes embarked on several projects, among them the Durham 
 
 Each facility along its arc could load freight cars directly, feeding goods toward either end of the line, where it connected to the two railroads serving the city: the original NC Railroad running east to west along Pettigrew Street, and a north-south corridor dropping down from Virginia.
 
+## The Durham Belt Line
+
+![The Durham Belt Line](images/beltline.png)
+
 ## Pearl Cotton Mill
 
 Another Duke venture was the Pearl Cotton Mills on Trinity Avenue, between Washington and Duke streets. By 1895 it employed 200 workers running 10,000 spindles and 160 looms, producing fine muslin and extra-wide sheeting.
@@ -46,6 +50,10 @@ South Ellerbe Creek ran through the lowest ground in the area, collecting draina
 
 From the south, one of those feeders ran directly past the Pearl Cotton Mill, carrying the mill's spent dye water into the system — hot, soapy effluent that turned the water deep indigo, sulfurous purple, bright red. The neighborhood smelled like a laundromat. Residents called it the ditch.
 
+## Strayhorn Branch
+
+![Strayhorn Branch](images/strayhorn.jpg)
+
 ## Markham and Mangum
 
 In 1890, a development company laid out an alphabetical street grid north of Trinity College, its east-west streets running parallel to what is now Buchanan Boulevard. The first of those streets — "A Street," covering the 1200–1700 blocks of what would become West Markham — was designed as worker housing for the college's orbit. It was, for the time, all that Markham Avenue was.
@@ -53,6 +61,10 @@ In 1890, a development company laid out an alphabetical street grid north of Tri
 A decade later, in 1903, the blocks stretching from Watts Street down to the edge of a swamp at Ellerbe Creek were set aside on paper as the J.M. Markham farm plat. But the land stayed a working farm, and between the two established points, the rest of Markham remained fields and woods.
 
 To the east, Mangum Street was only barely more developed — a handful of large houses on generous lots, among them attorney James Manning at 911 North Mangum and printer Henry Seeman at 112 West Seeman. Walking south along Mangum, one would arrive at Little Five Points, the junction of Mangum, Cleveland, and Corporation streets, where converging angles carved out wedge-shaped lots lined with wood-frame commercial buildings. In the 1890s, this was effectively the northern edge of the city.
+
+## Ellerbe Creek
+
+![Ellerbe Creek](images/ellerbe.jpg)
 
 ## Streetcars
 
