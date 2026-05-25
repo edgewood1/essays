@@ -383,20 +383,30 @@ main {
 }
 
 /* ─── Full-page image section ────────────────────────────────────────────────── */
+
+/*
+ * Lock image pages to exactly the viewport space between the two fixed bars.
+ * height (not min-height) prevents any overflow/scroll on this page type.
+ */
 #viewEssay.image-page {
   padding: 0;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-}
-
-#viewEssay.image-page .essay-header {
-  padding: 1.5rem var(--pad-x) 1rem;
-  margin-bottom: 0;
-  border-bottom: none;
+  height: calc(100dvh - var(--nav-h) - var(--pag-h));
+  min-height: unset;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   max-width: none;
 }
 
+#viewEssay.image-page .essay-header {
+  padding: 0.85rem var(--pad-x) 0.75rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
 #viewEssay.image-page .essay-body {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
