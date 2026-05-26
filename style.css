@@ -643,6 +643,38 @@ main {
   to   { opacity: 1; transform: translateY(0); }
 }
 
+/* ─── Page flip (Option 2) ───────────────────────────────────────────────────── */
+/* Forward flips left, back flips right, direction-aware.                         */
+/* Option 3 fallback — cross-dissolve with horizontal drift:                      */
+/*   if the flip proves too jarring, swap the four keyframes below for:           */
+/*   @keyframes flipOutForward { to   { opacity:0; transform:translateX(-30px); } } */
+/*   @keyframes flipInForward  { from { opacity:0; transform:translateX( 30px); } } */
+/*   @keyframes flipOutBack    { to   { opacity:0; transform:translateX( 30px); } } */
+/*   @keyframes flipInBack     { from { opacity:0; transform:translateX(-30px); } } */
+/*   and remove the perspective() calls from the active keyframes below.          */
+
+.flip-out-forward { animation: flipOutForward 0.22s ease-in  forwards; }
+.flip-in-forward  { animation: flipInForward  0.22s ease-out forwards; }
+.flip-out-back    { animation: flipOutBack    0.22s ease-in  forwards; }
+.flip-in-back     { animation: flipInBack     0.22s ease-out forwards; }
+
+@keyframes flipOutForward {
+  from { opacity: 1; transform: perspective(1200px) rotateY(0deg);   }
+  to   { opacity: 0; transform: perspective(1200px) rotateY(-90deg); }
+}
+@keyframes flipInForward {
+  from { opacity: 0; transform: perspective(1200px) rotateY(90deg);  }
+  to   { opacity: 1; transform: perspective(1200px) rotateY(0deg);   }
+}
+@keyframes flipOutBack {
+  from { opacity: 1; transform: perspective(1200px) rotateY(0deg);  }
+  to   { opacity: 0; transform: perspective(1200px) rotateY(90deg); }
+}
+@keyframes flipInBack {
+  from { opacity: 0; transform: perspective(1200px) rotateY(-90deg); }
+  to   { opacity: 1; transform: perspective(1200px) rotateY(0deg);   }
+}
+
 /* ─── Scrollbar (webkit) ──────────────────────────────────────────────────────── */
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }

@@ -298,50 +298,75 @@ const UI = (() => {
 
   /* ── Essay rendering ── */
 
-  function renderEssayPage() {
+  function renderEssayPage(direction = 0) {
     const { current, page } = Store.get();
     if (!current) return;
 
-    const sections = current.sections;
-    const section  = sections[page];
-    const total    = sections.length;
+    function applyContent() {
+      const sections = current.sections;
+      const section  = sections[page];
+      const total    = sections.length;
 
-    // Header
-    dom.essayTitle.textContent   = current.title;
-    dom.sectionLabel.textContent = section.title || '';
-    dom.essayHeader.classList.toggle('intro', !section.title);
+      // Header
+      dom.essayTitle.textContent   = current.title;
+      dom.sectionLabel.textContent = section.title || '';
+      dom.essayHeader.classList.toggle('intro', !section.title);
 
-    // Full-page image vs prose
-    if (section.imageOnly) {
-      dom.viewEssay.classList.add('image-page');
-      dom.essayBody.innerHTML = Parser.renderImageSection(section);
-      const img = dom.essayBody.querySelector('img');
-      if (img) {
-        img.addEventListener('error', () => showImgPlaceholder(img), { once: true });
-        img.addEventListener('click', () => openLightbox(img.src, img.alt));
+      // Full-page image vs prose
+      if (section.imageOnly) {
+        dom.viewEssay.classList.add('image-page');
+        dom.essayBody.innerHTML = Parser.renderImageSection(section);
+        const img = dom.essayBody.querySelector('img');
+        if (img) {
+          img.addEventListener('error', () => showImgPlaceholder(img), { once: true });
+          img.addEventListener('click', () => openLightbox(img.src, img.alt));
+        }
+      } else {
+        dom.viewEssay.classList.remove('image-page');
+        dom.essayBody.innerHTML = Parser.renderSection(section.content);
+        dom.essayBody.querySelectorAll('img').forEach(img => {
+          img.addEventListener('error', () => showImgPlaceholder(img), { once: true });
+          img.addEventListener('click', () => openLightbox(img.src, img.alt));
+          img.style.cursor = 'zoom-in';
+        });
       }
-    } else {
-      dom.viewEssay.classList.remove('image-page');
-      dom.essayBody.innerHTML = Parser.renderSection(section.content);
-      dom.essayBody.querySelectorAll('img').forEach(img => {
-        img.addEventListener('error', () => showImgPlaceholder(img), { once: true });
-        img.addEventListener('click', () => openLightbox(img.src, img.alt));
-        img.style.cursor = 'zoom-in';
-      });
+
+      // Pagination
+      if (total > 1) {
+        dom.pagination.hidden         = false;
+        dom.pageIndicator.textContent = `${page + 1} / ${total}`;
+        dom.prevBtn.disabled          = page === 0;
+        dom.nextBtn.disabled          = page === total - 1;
+      } else {
+        dom.pagination.hidden = true;
+      }
+
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      updateScrollProgress(0);
     }
 
-    // Pagination
-    if (total > 1) {
-      dom.pagination.hidden         = false;
-      dom.pageIndicator.textContent = `${page + 1} / ${total}`;
-      dom.prevBtn.disabled          = page === 0;
-      dom.nextBtn.disabled          = page === total - 1;
-    } else {
-      dom.pagination.hidden = true;
+    if (!direction) {
+      applyContent();
+      return;
     }
 
-    window.scrollTo({ top: 0, behavior: 'instant' });
-    updateScrollProgress(0); // reset on page turn
+    // Cancel any in-progress flip before starting a new one
+    dom.essayBody.classList.remove('flip-out-forward', 'flip-out-back', 'flip-in-forward', 'flip-in-back');
+    void dom.essayBody.offsetWidth; // reflow
+
+    const outClass = direction > 0 ? 'flip-out-forward' : 'flip-out-back';
+    const inClass  = direction > 0 ? 'flip-in-forward'  : 'flip-in-back';
+
+    dom.essayBody.classList.add(outClass);
+    dom.essayBody.addEventListener('animationend', () => {
+      dom.essayBody.classList.remove(outClass);
+      applyContent();
+      void dom.essayBody.offsetWidth; // reflow before flip-in
+      dom.essayBody.classList.add(inClass);
+      dom.essayBody.addEventListener('animationend', () => {
+        dom.essayBody.classList.remove(inClass);
+      }, { once: true });
+    }, { once: true });
   }
 
   function updateScrollProgress(pct) {
@@ -464,7 +489,7 @@ function changePage(delta) {
   const next = page + delta;
   if (next < 0 || next >= current.sections.length) return;
   Store.set({ page: next });
-  UI.renderEssayPage();
+  UI.renderEssayPage(delta);
   Router.replace(Router.essayPath(current.file, next));
 }
 
