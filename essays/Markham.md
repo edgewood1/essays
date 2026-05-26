@@ -30,6 +30,8 @@ Around this time, the Dukes embarked on several projects, among them the Durham 
 
 Each facility along its arc could load freight cars directly, feeding goods toward either end of the line, where it connected to the two railroads serving the city: the original NC Railroad running east to west along Pettigrew Street, and a north-south corridor dropping down from Virginia.
 
+The Belt Line's right-of-way cut through the northern industrial fringe — the same ground where the Strayhorn community had lived and worked. City directory records show the community present before the line's construction and absent afterward.
+
 ## The Durham Belt Line
 
 ![The Durham Belt Line](images/beltline.png)
@@ -60,7 +62,7 @@ In 1890, a development company laid out an alphabetical street grid north of Tri
 
 A decade later, in 1903, the blocks stretching from Watts Street down to the edge of a swamp at Ellerbe Creek were set aside on paper as the J.M. Markham farm plat. But the land stayed a working farm, and between the two established points, the rest of Markham remained fields and woods.
 
-To the east, Mangum Street was only barely more developed — a handful of large houses on generous lots, among them attorney James Manning at 911 North Mangum and printer Henry Seeman at 112 West Seeman. Walking south along Mangum, one would arrive at Little Five Points, the junction of Mangum, Cleveland, and Corporation streets, where converging angles carved out wedge-shaped lots lined with wood-frame commercial buildings. In the 1890s, this was effectively the northern edge of the city.
+To the east, Mangum Street carried a settled residential character from Little Five Points north to Trinity Avenue — large houses on generous, estate-scale lots, among them attorney James Manning at 911 North Mangum and printer Henry Seeman at 112 West Seeman. Little Five Points itself, the junction of Mangum, Cleveland, and Corporation streets, was a knot of commercial buildings where converging angles carved out wedge-shaped lots lined with wood-frame storefronts. North of Trinity Avenue, the land belonged almost entirely to Brodie Duke and remained unsubdivided — fields and holdings not yet broken into streets.
 
 ## Ellerbe Creek
 
@@ -138,4 +140,4 @@ Markham and the Strayhorn community were within earshot of each other, yet getti
 
 The Belt Line railroad, the dead-end streets, the creeks pressed into concrete culverts first to connect Markham's two halves and only decades later to reach Washington Street — all of these were decisions made by specific people at specific moments, determining how communities would be connected and how they would be routed around each other. Those decisions can still be read in the landscape: in the gravel remnant at Macon Street, in the old railroad embankment, in the water still moving beneath the foundation at 416.
 
-And in a single line in the 1938 city directory — "Garland Fannie (c) maid 416 W. Markham Ave." In terms of the public record, that is all we have of her. We know she was there. We know little else. But somewhere among the church rolls, family papers, and memories of families still in Durham, her full story almost certainly exists.
+And in a single line in the 1938 city directory — "Garland Fannie (c) maid 416 W. Markham Ave." In terms of the public record, that is all we have of her. We know she was there. We know little else. But the leads are specific: if she attended North Carolina College for Negroes, enrollment and graduation records from that period may survive. Descendants of the Garland family may still be in Durham. Somewhere among those records, church rolls, and family papers, her full story almost certainly exists.
