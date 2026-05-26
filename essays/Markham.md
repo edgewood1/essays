@@ -22,7 +22,7 @@ Beyond that, the pressure eased. Speculators like Brodie Duke acquired much of t
 
 Duke's purchased land ended at Dacian, where a strip of land had already been established as the Strayhorn subdivision.
 
-What made it distinct wasn't how it came to be but who remained: roughly 65 people, black and white, many of them former slaves who had taken the family name and stayed on under tenant arrangements — working the land, or finding wages in the tobacco factories, or hiring out as domestic workers and day laborers.
+What made it distinct wasn't how it came to be but who remained: roughly 65 people, black and white, many of them former slaves — those who had taken the Strayhorn name were almost certainly formerly enslaved on that farm, others perhaps drawn from surrounding holdings — staying on under tenant arrangements, working the land, or finding wages in the tobacco factories, or hiring out as domestic workers and day laborers.
 
 ## The Duke Belt Line
 
