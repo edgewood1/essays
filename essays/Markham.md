@@ -30,7 +30,7 @@ Around this time, the Dukes embarked on several projects, among them the Durham 
 
 Each facility along its arc could load freight cars directly, feeding goods toward either end of the line, where it connected to the two railroads serving the city: the original NC Railroad running east to west along Pettigrew Street, and a north-south corridor dropping down from Virginia.
 
-The Belt Line's right-of-way cut through the northern industrial fringe — the same ground where the Strayhorn community had lived and worked. City directory records show the community present before the line's construction and absent afterward.
+The Belt Line's right-of-way cut through the northern industrial fringe — the same ground where the Strayhorn community had lived and worked. Securing that corridor meant clearing it: structures removed, tenants displaced, the land legally transferred to railroad use. City directory records show the community present before the line's construction and absent afterward.
 
 ## The Durham Belt Line
 
@@ -42,7 +42,7 @@ Another Duke venture was the Pearl Cotton Mills on Trinity Avenue, between Washi
 
 Housing for workers spread along Washington, Orient, and Foster streets, eventually totaling 35 houses. Workers who couldn't secure a company house found rentals nearby, including a row of one-story frame cottages along the 800 block of North Duke Street.
 
-The village was designed as white-only, and unlike the people of the mixed-race Strayhorn community that sat across the street, the villagers received access to a company church, a company store, and a school. If black workers were allowed into the mill, it was to take the dirtiest jobs — unloading cotton bales, stoking boiler rooms. Black women found almost no employment at all.
+The village was designed as white-only, built on ground adjacent to where the Strayhorn community had stood until the Belt Line displaced it the year before. The villagers received access to a company church, a company store, and a school — amenities that had never reached Strayhorn. If black workers were allowed into the mill, it was to take the dirtiest jobs — unloading cotton bales, stoking boiler rooms. Black women found almost no employment at all.
 
 ## The Landscape at Washington and Markham
 
@@ -76,13 +76,13 @@ The line stitched Mangum to downtown, and from downtown riders could catch conne
 
 It was the trolley that made Mangum Street matter. By the early 1920s its rails had drawn churches, professional offices, and middle-class homes. By 1930, Durham's population nearly tripled, surging from 21,719 to 52,037.
 
-Growth pushed northwest toward the Strayhorn area as Old North Durham expanded outward from Little Five Points, filling in the streets between.
+Growth pushed northwest into the ground where Strayhorn had stood, as Old North Durham expanded outward from Little Five Points, filling in the streets between.
 
 At Mangum, Markham split into its east and west branches — each extending only modestly, three blocks east and four blocks west, before the road simply stopped. Between the 400 and 1200 blocks, Markham did not exist at all. Beyond that edge lay the Strayhorn and Ellerbe waterways, then a hill climbing toward the old Markham farm plat — still a working farm after all these years — and eventually Watts.
 
 ## Divisions
 
-The forces holding that gap open were as much social as topographical. Middle-class expansion pressed westward from Mangum, quietly hemming in the working-class Strayhorn and Pearl Mill communities. Industrial rail lines anchored the northern boundary.
+The forces holding that gap open were as much social as topographical. Middle-class expansion pressed westward from Mangum, quietly hemming in the Pearl Mill community and the land where Strayhorn had been. Industrial rail lines anchored the northern boundary.
 
 To the west, Ellerbe Creek and a fractured Washington Street — dead-ending at Macon and resuming only at Green, north of the tracks — completed the enclosure. City planners felt little urgency to stitch the industrial zone, with its tracks, shipping docks, and storehouses, into the fabric of the prospering suburb beyond.
 
@@ -126,7 +126,7 @@ What brought Fannie to this arrangement is unknown, but speculating gives us a s
 
 Or the arrangement may have been temporary — a practical solution while she finished her education. North Carolina College for Negroes had admitted women since it opened in 1910, training them primarily for careers in teaching and school administration. For a young woman working toward that kind of future, a live-in position offered a room, meals, and stability while she completed her studies.
 
-If she was from Durham, she might have come from Hayti — by the 1930s a city within a city, with its own bank, hospital, newspaper, and theater, anchored by St. Joseph's AME Church on the southern edge of downtown. Or she may have come from the Strayhorn settlement, or one of the other small Black communities scattered through this part of town.
+If she was from Durham, she might have come from Hayti — by the 1930s a city within a city, with its own bank, hospital, newspaper, and theater, anchored by St. Joseph's AME Church on the southern edge of downtown. Or she may have come from one of the other small Black communities scattered through this part of town.
 
 If she came from somewhere else entirely, a supervised arrangement in an unfamiliar city would have been deeply reassuring to her family — and familiar enough to feel safe. Because the formal system offered Black women almost no infrastructure for safe relocation, movement depended entirely on informal networks: local ministers, mutual connections, former employers with ties across town. Her family may have had modest means but enough community standing to activate those pathways. It was this quiet, vital matrix of faith and kinship that made such transitions possible at all.
 
@@ -136,7 +136,7 @@ On Sundays, when convention gave her the time as her own, she could walk back to
 
 ## What Remains
 
-Markham and the Strayhorn community were within earshot of each other, yet getting from one to the other meant a long detour — or a trail forged through woods thick with undergrowth.
+Markham and the Strayhorn community had been within earshot of each other, yet getting from one to the other meant a long detour — or a trail forged through woods thick with undergrowth.
 
 The Belt Line railroad, the dead-end streets, the creeks pressed into concrete culverts first to connect Markham's two halves and only decades later to reach Washington Street — all of these were decisions made by specific people at specific moments, determining how communities would be connected and how they would be routed around each other. Those decisions can still be read in the landscape: in the gravel remnant at Macon Street, in the old railroad embankment, in the water still moving beneath the foundation at 416.
 
