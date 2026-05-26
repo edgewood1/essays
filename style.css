@@ -336,7 +336,7 @@ main {
 /* ─── Inline images ──────────────────────────────────────────────────────────── */
 .essay-body img {
   display: block;
-  max-width: 100%;
+  max-width: min(100%, calc(var(--max-prose) * 1.5));
   height: auto;
   margin: 2em auto;
   outline: 1px solid var(--border);
