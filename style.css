@@ -266,13 +266,18 @@ main {
   flex-direction: column;
   max-width: var(--max-prose);
   margin: 0 auto;
-  padding: 2.5rem var(--pad-x) 2rem;
+  padding: 0 var(--pad-x) 2rem;
   min-height: calc(100dvh - var(--nav-h));
 }
 
 .essay-header {
-  margin-bottom: 1.5rem;
+  position: sticky;
+  top: var(--nav-h);
+  background: var(--bg);
+  z-index: 50;
+  padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
   border-bottom: 1px solid var(--border);
 }
 
