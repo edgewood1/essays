@@ -181,6 +181,17 @@ However, each of those interventions had its own stated justifications — weapo
 **Who benefits from inflation**
 When new money is created — through loans, through government spending, through central bank asset purchases — it enters the economy at specific points first. Banks get it. Large financial institutions get it. Asset prices rise before consumer prices do. By the time inflation shows up in grocery stores and rent, the people closest to the money creation have already deployed it into appreciating assets. The person who owns property, stocks, and bonds sees their wealth inflate alongside the money supply. The person whose only asset is their paycheck watches their purchasing power erode. Dixon calls this the structural advantage built into the system for those at the top — it does not require corruption or conspiracy, only proximity to where money enters the economy.
 
+**Why fiat eventually loses credibility**
+A question worth asking directly: why would people lose faith in their currency at all? Most people in wealthy countries have never experienced this. The dollar has been the world's dominant currency for eighty years. It feels permanent.
+
+But the mechanism of its potential failure is built into the system itself. Governments facing debts they cannot repay through taxation have one tool that requires no vote and leaves no obvious fingerprints: create more money. Every unit of new money dilutes the purchasing power of every unit already in circulation. This is inflation — not in the technical sense of prices rising for various reasons, but in the original sense of the money supply being inflated, which pulls prices upward as a consequence.
+
+In small doses, this is invisible and manageable. But when debt becomes large enough relative to the size of an economy, the pressure to inflate grows. At some point, the math tips: it becomes cheaper for a government to inflate its way out of debt than to genuinely repay it. Savings held in that currency quietly lose their value. The people who understand this early move their wealth into hard assets — real estate, gold, eventually Bitcoin. The people who don't are left holding currency that buys less each year.
+
+This has happened repeatedly throughout history, always following the same arc. Weimar Germany in the early 1920s printed money to pay war reparations until a wheelbarrow of banknotes couldn't buy a loaf of bread. Zimbabwe did the same in the 2000s, ultimately printing hundred-trillion-dollar notes that were worthless within weeks of issue. Argentina has gone through currency collapse multiple times in living memory. Venezuela more recently. In every case the mechanism was identical: a government using money creation to cover obligations it could not meet through real economic output.
+
+The United States is different in scale — dollar dominance gives it far more runway than any other country has ever had. But Dixon's argument is that the structural logic is the same. U.S. debt is now so large relative to GDP that genuine repayment is not a serious political possibility. The debt will be managed through inflation, not resolved. The question is not whether the dollar loses purchasing power over time but how fast, and whether the loss remains gradual or at some point becomes sudden.
+
 ---
 
 ## Bitcoin: The Exit, Not the Reform
