@@ -1,6 +1,6 @@
 # Essays
 
-A minimal, mobile-first static blog for publishing long-form essays as paginated markdown. Deployed via GitHub Pages at [edgewood1.github.io/essays](https://edgewood1.github.io/essays).
+A minimal, mobile-first static blog for publishing long-form essays as paginated markdown. Deployed via GitHub Pages at [edgewood1.github.io/essays](https://edgewood1.github.io/essays) and Netlify at [essays77.netlify.app](https://essays77.netlify.app).
 
 ---
 
