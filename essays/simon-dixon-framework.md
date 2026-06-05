@@ -1,6 +1,4 @@
 # Simon Dixon: How the World Actually Works
-*A primer for newcomers — first draft, more layers to come*
-
 ---
 
 ## Who Is Simon Dixon?
