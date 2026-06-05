@@ -220,6 +220,14 @@ From a mainstream investment perspective, this looks like validation — Bitcoin
 
 Dixon's view of the same events is almost the inverse. When you buy a Bitcoin ETF, you do not hold Bitcoin — BlackRock does. The self-custodial property that Dixon identifies as Bitcoin's defining feature — the fact that no institution can freeze or seize it — disappears the moment it moves into an ETF. The Bitcoin is now inside the banking system, held by the same asset manager that managed the government's crisis bailout programs. Dixon would argue that institutional adoption through ETFs is not Bitcoin winning. It is the FIC finding a way to hold the keys.
 
+This raises a question an outsider might ask: why would BlackRock want to hold so much Bitcoin in the first place? If the institution most associated with the existing financial system is rushing to accumulate a fixed-supply asset designed to exist outside that system, what do they know that they're not saying?
+
+Dixon's answer is that BlackRock understands Bitcoin's properties better than most retail investors do — and that's precisely why they want custody of it. Here is the logic: the existing financial system is built on debt and requires perpetual expansion to survive. At some point — through inflation, default, or a slow erosion of confidence — fiat currencies lose their hold. When that happens, people will look for something with a fixed supply that cannot be debased. Historically that was gold. Increasingly, it is Bitcoin. Whoever holds and manages that Bitcoin at scale will occupy the same structural position in the new system that they occupy in the current one: the intermediary that everyone else depends on.
+
+In other words, BlackRock is not buying Bitcoin because they believe in the exit thesis. They are buying it to make sure the exit goes through them. An individual holding Bitcoin in their own wallet is outside the financial system. Millions of people holding Bitcoin through a BlackRock ETF are still inside it — still dependent on an intermediary, still subject to the same institutional leverage that defines the FIC. The asset changes. The dependency doesn't.
+
+This is why Dixon draws a hard line between Bitcoin held in self-custody and Bitcoin held through institutional products. They track the same price. They are not the same thing.
+
 **What Dixon recommends**
 His practical advice follows directly from the analysis. If the system extracts wealth through debt, reduce your debt. If it controls assets through financial institutions, hold some assets outside those institutions. If it monitors and controls through centralized platforms, diversify across jurisdictions. And if you want a form of money that exists outside the FIC's reach, Bitcoin — held in self-custody — is currently the only option he identifies as structurally adequate.
 
