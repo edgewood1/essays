@@ -1,5 +1,4 @@
 # Simon Dixon: How the World Actually Works
----
 
 ## Who Is Simon Dixon?
 
