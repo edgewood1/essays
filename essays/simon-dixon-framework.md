@@ -207,6 +207,25 @@ There is also a generational dimension worth noting here. Cathie Wood, CEO of AR
 
 Other financial assets — stocks, bonds, real estate — exist entirely within the FIC's infrastructure. They are denominated in fiat currency, held through institutions that operate under government licenses, and subject to capital controls, freezes, and confiscation orders. Owning these things means participating in the system, on the system's terms.
 
+**How Bitcoin went from pennies to tens of thousands of dollars**
+A natural question before going further: if Bitcoin started as something worth fractions of a cent, how did it reach the price it has today? And does that price reflect something real, or is it just speculation?
+
+The short answer is: fixed supply plus growing demand. But the *why* behind the demand is what makes it worth understanding.
+
+When Bitcoin launched in 2009, it had no price at all — there was no market for it. The first recorded transaction was in 2010, when a programmer paid 10,000 Bitcoin for two pizzas. Those coins would be worth hundreds of millions of dollars today. At that point, Bitcoin's only users were a small community of cryptographers, privacy advocates, and libertarian technologists who understood what it was and believed in the concept. The price was essentially zero because almost no one wanted it.
+
+What changed was a sequence of waves, each one bringing a new group of buyers.
+
+The first wave was ideological. People who distrusted central banks and governments discovered Bitcoin and bought it precisely because it sat outside the financial system. This was a small group, but they were early and they held.
+
+The second wave was speculative. As the price began rising from dollars to hundreds of dollars, traders and retail investors piled in hoping to profit. This drove the first major price cycles — dramatic rises followed by crashes of 80% or more — which became a recurring pattern.
+
+The third wave was institutional. When large funds, corporations, and eventually ETFs began allocating to Bitcoin, the scale of demand changed entirely. A hedge fund moving 1% of its portfolio into Bitcoin represents billions of dollars chasing the same fixed supply of 21 million coins.
+
+This is the key mechanism: the supply cannot respond to demand. When a popular stock rises in price, companies can issue more shares. When gold gets expensive, miners dig up more. When demand for Bitcoin rises, the supply stays fixed. There will only ever be 21 million coins. Roughly 19 million have already been mined. The remaining ones are released on a fixed schedule that slows over time — every four years, the rate at which new Bitcoin enters circulation is cut in half, an event called the **halving**. Each halving reduces the supply of new coins hitting the market, which has historically preceded major price increases.
+
+So the price rise reflects something real: each new wave of buyers discovering a fixed-supply asset and bidding for a share of a pool that cannot grow. Whether the current price is justified depends on what you think Bitcoin's ultimate role will be — a niche asset, a global store of value, or something in between. That debate is ongoing. But the mechanism of the price increase is straightforward supply and demand applied to something whose supply is mathematically capped.
+
 **What Bitcoin is, in plain terms**
 Bitcoin is digital money that runs on a network with no central authority — no company that owns it, no government that issues it, no bank that holds it. It was released in 2009 by a person or group using the pseudonym Satoshi Nakamoto, whose real identity remains unknown.
 
