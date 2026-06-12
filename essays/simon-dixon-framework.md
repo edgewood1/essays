@@ -14,7 +14,9 @@ Others push back on this framing. The counterargument is that what looks like de
 
 Dixon organizes global power into three interlocking structures he calls "complexes." Each one feeds and enables the others. None operates in isolation.
 
-### The Financial-Industrial Complex (FIC)
+---
+
+## The Financial-Industrial Complex
 
 This is the foundation. Everything else depends on it.
 
@@ -41,6 +43,10 @@ While central banks create money and bond markets lend it to governments, **asse
 **At the edges: the IMF and World Bank**
 These are international institutions, nominally part of the United Nations system, that extend credit specifically to countries — usually developing nations in economic crisis. The **IMF** (International Monetary Fund) provides emergency loans when a country can't pay its debts. The **World Bank** funds longer-term development projects like infrastructure. Both come with conditions: policy changes the borrowing country must implement in exchange for the money. These conditions — which often include privatizing public services, cutting social spending, and opening markets to foreign capital — have been criticized for locking poor nations into permanent debt dependency rather than genuine development.
 
+---
+
+## The Financial-Industrial Complex: Money as Debt
+
 The critical insight Dixon returns to again and again: **all modern money is created as debt.** Here is what that actually means, step by step:
 
 1. You go to a bank and ask for a $10,000 loan.
@@ -61,13 +67,29 @@ Dixon's conclusion is that wars and crises are not interruptions to the financia
 
 However, most economists and historians would draw the causal arrow differently. The mainstream view is that wars and financial crises have their own causes — political miscalculation, nationalism, ideological conflict, bank failures, asset bubbles — and that the borrowing that follows is a consequence, not a motive. The fact that debt expands during a war does not, in this view, mean the war happened in order to expand debt. Dixon's argument is a structural one about incentives, not a claim that anyone sat in a room and decided to start a war to generate lending — but critics argue the distinction matters, and that the pattern he identifies does not prove the mechanism he proposes.
 
+---
+
+## The Financial-Industrial Complex: BlackRock and the Rotation of Capital
+
 But who actually decides which institutions get the new money — and which ones don't? That question points to one company more than any other.
 
 **BlackRock** deserves special attention here. It manages roughly $10–14 trillion in assets and operates a risk-analysis platform called **Aladdin** that oversees an estimated $25 trillion across pension funds, central banks, and sovereign wealth funds. During the 2008 financial crisis and again during COVID, BlackRock was hired by the U.S. Treasury and Federal Reserve to manage bailout programs — meaning a private company was effectively making decisions about which institutions survived. Dixon argues this gives BlackRock extraordinary, largely invisible power over the global economy.
 
+What makes Aladdin significant beyond its scale is what it actually does with all that information. A risk platform, at its simplest, is a system that answers one question: *what happens to our portfolio if X occurs?* Aladdin models thousands of X's simultaneously — rising oil prices, a conflict in a shipping lane, a sovereign debt downgrade, a currency crisis — and calculates how each scenario ripples through every asset it tracks. The institutions that use it can see, before a crisis becomes news, how their holdings are exposed and where to move capital to minimize losses or capture gains.
+
+Dixon's point is not that BlackRock causes these events. It is that Aladdin gives its users a structural informational advantage over everyone who doesn't have it — which is most people. By the time a geopolitical disruption shows up in grocery prices or a pension fund statement, the repositioning has already happened. The crisis is an inclement weather event for ordinary people; for institutions with the right tools, it is a forecast they've been reading for weeks.
+
+The counterargument is straightforward: this is what risk management is for. Every large institution — pension funds, insurance companies, sovereign wealth funds — needs to model scenarios to protect its members. Having better tools is not the same as exploiting a crisis. The disagreement is whether sophisticated forecasting constitutes an unfair advantage or simply prudent stewardship. Dixon would say the two aren't mutually exclusive.
+
+Dixon uses the phrase **"Great Capital Rotation"** to describe a pattern he believes is already underway: large institutions systematically moving money out of the kinds of assets that sustain ordinary economic life — local business lending, productive infrastructure, stable employment — and into assets that concentrate returns among those who already hold them: AI infrastructure, real estate, Bitcoin, and financial products that exist primarily to generate yield for capital rather than wages for workers.
+
+To understand what this means in practice, it helps to think about where money goes when a pension fund or a sovereign wealth fund makes an allocation decision. When capital flows into index funds and ETFs, it doesn't go to a factory or a neighborhood — it goes to increase the price of assets that already exist, benefiting whoever holds them. When it flows into private equity, it often goes to buy existing companies, restructure them for short-term profit, and sell them — sometimes leaving them healthier, sometimes hollowed out. The rotation Dixon describes is not theft in any legal sense. It is the normal operation of capital seeking its highest return. His argument is that when this happens at institutional scale, the cumulative effect is a slow draining of productive capacity from the broader economy into the portfolios of those already at the top.
+
+The mainstream counterargument is that capital flowing into efficient allocations — even financial ones — ultimately raises returns for pension holders and retirees who depend on those funds. The question of who benefits from a capital rotation is more complicated than a simple extraction story. Dixon's critics would say his framing assumes zero-sum dynamics in a system that isn't always zero-sum.
+
 ---
 
-### The Military-Industrial Complex (MIC)
+## The Military-Industrial Complex
 
 Unlike the FIC, this one has a name most people have heard — though usually without understanding what it actually means. In 1961, President Dwight Eisenhower, himself a five-star general who had commanded Allied forces in World War II, gave a farewell address warning the American public about what he called the "military-industrial complex." His concern: that the permanent defense industry created after World War II had become so large, so embedded in the economy, and so politically connected that it would come to shape foreign policy for its own benefit rather than the nation's.
 
@@ -91,14 +113,23 @@ Most people don't encounter think tanks directly, but they shape the policy envi
 
 Dixon's observation: the think tanks that receive the most defense industry funding tend to produce the most hawkish foreign policy recommendations. This is not conspiracy — it is basic institutional logic. Organizations produce outputs that serve their funders.
 
-**The revenue logic of war**
+---
+
+## The Military-Industrial Complex: The Revenue Logic of War
+
 Put it together and Dixon's argument comes into focus. A war is not just a military event — it is an economic one. Procurement contracts surge. The government borrows heavily to fund operations, injecting new debt-money into the system. Reconstruction contracts follow. Energy resources may be secured or disrupted in ways that benefit certain markets. Dixon argues that the narrative justifying intervention — the ideological or humanitarian case — is typically assembled and broadcast after the financial and strategic decisions have already been made. He puts this lag at roughly 18 months: by the time the public hears the argument for a war, the economic logic has, in his view, been in motion for a year and a half. This is his own observation, not a documented standard; it functions as a rule of thumb for how to read public events rather than a verified measurement.
 
 The MIC depends entirely on the FIC — every defense contractor is a publicly traded company that needs access to capital markets, shareholders, and credit lines. The FIC funds the MIC. And the MIC, in turn, generates the instability that justifies the FIC's next round of crisis lending.
 
+A concrete example helps here. The **Strait of Hormuz** is a narrow waterway between Iran and Oman through which roughly 20% of the world's oil supply passes every day — tankers carrying crude from Saudi Arabia, Iraq, Kuwait, and the UAE to markets in Asia and Europe. It is one of the most strategically significant chokepoints on earth, and everyone in global finance knows it. When tension rises in the region — a military escalation, a seized tanker, a threat to close the strait — oil prices spike immediately. Anyone holding oil futures, energy stocks, or commodity positions profits from that spike.
+
+Dixon's argument is not that finance engineers these tensions. It is that finance is already positioned for them — because the transition away from dollar-denominated oil trade is already underway, the instability around chokepoints like Hormuz is a known variable rather than a surprise. Institutions with Aladdin-type modeling don't react to a Strait of Hormuz disruption; they've already stress-tested it and moved accordingly. The disruption is an inclement weather event for ordinary people. For a well-positioned energy trader, it is a realized forecast.
+
+The conventional view in finance and foreign policy is that this is simply how commodity markets work: traders price in geopolitical risk because that's their job, and the Strait of Hormuz has been a known risk variable for decades. The presence of financial positioning doesn't imply coordination with the events being positioned around, any more than an insurance company causes house fires by selling fire insurance. Dixon would say the analogy breaks down when the same institutions that model the risk also have relationships with the governments and defense contractors involved — that proximity is where the line between forecasting and influence gets blurry.
+
 ---
 
-### The Technological-Industrial Complex (TIC)
+## The Technological-Industrial Complex
 
 The TIC is the newest of the three and, in Dixon's view, the fastest-growing. It is also the least visible — because its primary product is not a weapon or a financial instrument but something more intimate: the management of what people believe, what they pay attention to, and how they understand the world.
 
@@ -162,7 +193,7 @@ The opposing view is that elected governments retain genuine, if constrained, po
 
 ---
 
-## Currency: Why the Dollar Rules, and What That Means
+## Currency: Why the Dollar Rules
 
 The mechanics of money creation were covered in the FIC section. But there is another layer of the currency question Dixon returns to repeatedly: not just how money is created, but why the U.S. dollar specifically sits at the center of the entire global system — and what that position allows.
 
@@ -181,7 +212,10 @@ However, each of those interventions had its own stated justifications — weapo
 **Who benefits from inflation**
 When new money is created — through loans, through government spending, through central bank asset purchases — it enters the economy at specific points first. Banks get it. Large financial institutions get it. Asset prices rise before consumer prices do. By the time inflation shows up in grocery stores and rent, the people closest to the money creation have already deployed it into appreciating assets. The person who owns property, stocks, and bonds sees their wealth inflate alongside the money supply. The person whose only asset is their paycheck watches their purchasing power erode. Dixon calls this the structural advantage built into the system for those at the top — it does not require corruption or conspiracy, only proximity to where money enters the economy.
 
-**Why fiat eventually loses credibility**
+---
+
+## Currency: Why Fiat Eventually Loses Credibility
+
 A question worth asking directly: why would people lose faith in their currency at all? Most people in wealthy countries have never experienced this. The dollar has been the world's dominant currency for eighty years. It feels permanent.
 
 But the mechanism of its potential failure is built into the system itself. Governments facing debts they cannot repay through taxation have one tool that requires no vote and leaves no obvious fingerprints: create more money. Every unit of new money dilutes the purchasing power of every unit already in circulation. This is inflation — not in the technical sense of prices rising for various reasons, but in the original sense of the money supply being inflated, which pulls prices upward as a consequence.
@@ -191,6 +225,22 @@ In small doses, this is invisible and manageable. But when debt becomes large en
 This has happened repeatedly throughout history, always following the same arc. Weimar Germany in the early 1920s printed money to pay war reparations until a wheelbarrow of banknotes couldn't buy a loaf of bread. Zimbabwe did the same in the 2000s, ultimately printing hundred-trillion-dollar notes that were worthless within weeks of issue. Argentina has gone through currency collapse multiple times in living memory. Venezuela more recently. In every case the mechanism was identical: a government using money creation to cover obligations it could not meet through real economic output.
 
 The United States is different in scale — dollar dominance gives it far more runway than any other country has ever had. But Dixon's argument is that the structural logic is the same. U.S. debt is now so large relative to GDP that genuine repayment is not a serious political possibility. The debt will be managed through inflation, not resolved. The question is not whether the dollar loses purchasing power over time but how fast, and whether the loss remains gradual or at some point becomes sudden.
+
+---
+
+## The End Point: What Asset Stripping Looks Like at the National Level
+
+Before turning to Bitcoin as Dixon's proposed exit, it is worth pausing on what he believes is happening to countries — including the United States — that are deep enough in debt that the FIC has structural leverage over them.
+
+The word **"vassal"** comes from medieval feudalism. A vassal was a lord who technically ruled their own territory but owed loyalty, military service, and resources to a more powerful lord above them. They had the appearance of sovereignty without full control of it. Dixon applies this concept — **"Great Vassalization"** — to nations whose debt obligations have placed them in a structurally similar position relative to the Financial-Industrial Complex. In exchange for access to credit and capital markets, they accept conditions: austerity, privatization, market opening, policy alignment. The IMF loan conditions described earlier in this essay are one mechanism. Bond market discipline — the threat of rising borrowing costs if a government steps out of line — is another.
+
+What does this look like when applied to the United States specifically? Dixon's argument is that dollar dominance has given the US more runway than any other country — the ability to run deficits that would have collapsed another nation long ago. But that runway is not infinite. As the petrodollar system erodes and other countries trade in alternative currencies, the structural demand for dollars declines. The debt becomes harder to service without inflation. And as that happens, the same capital that benefited from dollar dominance repositions — into hard assets, into AI infrastructure, into Bitcoin — before the general public understands what is occurring. By the time the average American feels it, the rotation has already happened.
+
+This is what Dixon means by asset stripping at the national scale. Not a heist — no one breaks in and takes anything. It is more like a slow structural shift in who holds what. The buildings, the companies, the infrastructure remain. What changes is who owns them and on what terms everyone else accesses them.
+
+Dixon points to Venezuela as a case study in the accelerated version of this process — a country whose oil wealth made it a target for financial extraction, whose political instability was deepened by external pressures, and which ended up restructuring its economy under conditions set by outside capital. He uses Venezuela not as a conspiracy example but as a visible endpoint of a process he believes operates more slowly and quietly elsewhere.
+
+The counterargument here is significant. Venezuela's collapse had many causes rooted in its own governance failures — price controls, corruption, political authoritarianism, and an over-reliance on a single commodity. Reducing it to an FIC extraction story removes the agency of the people who made the decisions that destabilized it. Dixon's critics argue that his framework can become a way of explaining everything through a single lens, which risks missing the complexity of how individual nations actually fail. His supporters would say the framework doesn't claim to be the only cause — only that it identifies a consistent structural pressure that interacts with whatever local factors exist.
 
 ---
 
@@ -237,6 +287,10 @@ It is decentralized. Thousands of computers around the world each hold a full co
 
 It is self-custodial. If you hold Bitcoin in your own wallet — meaning you hold the private cryptographic key yourself, not through an exchange or a bank — no institution can freeze it, seize it, or deny you access. It exists as mathematics, not as an entry in someone else's ledger.
 
+---
+
+## Bitcoin: Recapture and Self-Custody
+
 **Dixon's theory about Bitcoin's origins**
 Dixon offers a provocative theory about where Bitcoin came from. In his reading, it was originally conceived as an intelligence project — an attempt to design a controllable digital currency that could eventually replace cash and give governments total visibility into every transaction. The anonymous "Satoshi Nakamoto" may have been a team rather than an individual, possibly with intelligence community ties. Dixon believes that **Len Sassaman** — a prominent cryptographer and privacy activist who died in 2011 — may have been involved in either creating Bitcoin or ensuring it was released in a form that couldn't be controlled. By making the code fully open-source and the cryptographic architecture genuinely resistant to seizure, whoever built it created something the system has spent years trying to recapture — through regulation, institutional products that bring Bitcoin back inside the financial system, and the development of Central Bank Digital Currencies (CBDCs) that mimic Bitcoin's technology while restoring central control.
 
@@ -267,4 +321,3 @@ The goal is not to overthrow the system. It is to reduce your personal dependenc
 ## The Core Claim, Simply Put
 
 The world is not run by governments elected by citizens. It is run by the incentive structures of three interlocking complexes — financial, military, and technological — that predate most living governments and will outlast most current ones. Politicians operate within these structures. Wars follow financial logic, not ideology. Currency is a control mechanism. Technology manages perception. And the first step toward freedom, in Dixon's view, is simply seeing the map.
-
