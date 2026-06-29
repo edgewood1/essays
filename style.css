@@ -26,6 +26,20 @@
   --ease-in:   cubic-bezier(0.64, 0, 0.78, 0);
 }
 
+/* ─── Light mode tokens ──────────────────────────────────────────────────────── */
+[data-theme="light"] {
+  --bg:           #f7f4f0;
+  --surface:      #f0ece6;
+  --surface-2:    #e8e3dc;
+  --border:       #d0c8be;
+  --border-soft:  #ddd8d0;
+  --text:         #2c2420;
+  --text-dim:     #7a6e68;
+  --text-muted:   #a89e96;
+  --accent:       #8a7060;
+  --accent-soft:  #c4a898;
+}
+
 /* ─── Base ───────────────────────────────────────────────────────────────────── */
 html {
   font-size: 18px;
@@ -71,6 +85,20 @@ body {
   transition: color 0.2s;
 }
 .nav-title:hover { color: var(--text); }
+
+/* ─── Theme toggle ───────────────────────────────────────────────────────────── */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: var(--text-dim);
+  font-size: 1rem;
+  line-height: 1;
+  transition: color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+.theme-toggle:hover { color: var(--text); }
 
 /* ─── Hamburger ─────────────────────────────────────────────────────────────── */
 .hamburger {
@@ -346,6 +374,16 @@ main {
 /* Same treatment for full-page image sections */
 #viewEssay.image-page .essay-body img {
   filter: invert(1) grayscale(1) brightness(0.85) sepia(0.25);
+}
+
+/* Light mode: don't invert images */
+[data-theme="light"] .essay-body img,
+[data-theme="light"] #viewEssay.image-page .essay-body img {
+  filter: grayscale(0.1) brightness(0.97);
+}
+
+[data-theme="light"] #viewEssay.image-page .essay-body {
+  background: var(--surface-2);
 }
 
 .essay-body figure {

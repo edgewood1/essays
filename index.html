@@ -9,6 +9,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>
+    (function(){
+      var saved = localStorage.getItem('essays-theme');
+      var preferred = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', preferred);
+    })();
+  </script>
 </head>
 <body>
 
@@ -18,6 +25,7 @@
       <span></span><span></span><span></span>
     </button>
     <a class="nav-title" id="navHome" href="#">Essays</a>
+    <button class="theme-toggle" id="themeBtn" aria-label="Toggle theme"></button>
   </header>
 
   <!-- MENU OVERLAY -->

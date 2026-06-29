@@ -565,9 +565,43 @@ window.addEventListener('scroll', () => {
 
 window.addEventListener('popstate', () => Router.dispatch());
 
+/* ─── Theme toggle ─────────────────────────────────────────────────────────── */
+
+const Theme = (() => {
+  const STORAGE_KEY = 'essays-theme';
+  const html = document.documentElement;
+  const metaTheme = document.querySelector('meta[name="theme-color"]');
+
+  function apply(theme) {
+    html.setAttribute('data-theme', theme);
+    if (metaTheme) metaTheme.content = theme === 'light' ? '#f7f4f0' : '#0d0d0d';
+    const btn = document.getElementById('themeBtn');
+    if (btn) {
+      btn.textContent = theme === 'light' ? '☾' : '☀';
+      btn.setAttribute('aria-label', theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
+    }
+  }
+
+  function toggle() {
+    const next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    localStorage.setItem(STORAGE_KEY, next);
+    apply(next);
+  }
+
+  function init() {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    const preferred = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    apply(preferred);
+    document.getElementById('themeBtn').addEventListener('click', toggle);
+  }
+
+  return { init };
+})();
+
 /* ─── Init ─────────────────────────────────────────────────────────────────── */
 
 (async () => {
+  Theme.init();
   // Eagerly load essay list so landing teaser is available
   await ensureEssaysLoaded();
   Router.dispatch();
